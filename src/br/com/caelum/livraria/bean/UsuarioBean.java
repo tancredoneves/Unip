@@ -1,11 +1,13 @@
 package br.com.caelum.livraria.bean;
 
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.List;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import br.com.caelum.livraria.dao.UsuarioDao;
+import br.com.caelum.livraria.enums.TipoRaca;
 import br.com.caelum.livraria.modelo.Usuario;
 import br.com.caelum.livraria.tx.Transacional;
 
@@ -19,6 +21,16 @@ public class UsuarioBean implements Serializable {
 	private Usuario usuario = new Usuario();
 	
 	private Integer usuarioId;
+	
+	private List<TipoRaca> enumTipoRaca;
+
+	public void TipoRacaMB(){
+	    enumTipoRaca = Arrays.asList(TipoRaca.values());
+	}
+
+	public List<TipoRaca> getEnumTipoRaca() {
+	    return enumTipoRaca;
+	}
 	
 	@Inject
 	private UsuarioDao dao;
@@ -43,6 +55,8 @@ public class UsuarioBean implements Serializable {
 		System.out.println("Gravando Usuario " + this.usuario.getNome());
 		
 		List<Usuario> xpto = getUsuarios();
+		
+		
 		
 		//EMAIL
 	
