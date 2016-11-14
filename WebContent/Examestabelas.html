@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro</title> 
+        <meta charset="utf-8">
+        <link rel="icon" href="favicon.png">
+        <link rel="icon" href="reset.css">
+        <link rel=stylesheet href="bio.css">
+        <link rel=stylesheet href="alura.css">
+        <link rel="stylesheet" href="css/contato.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        
+        
+    </head>
+    <body>
+        <main>
+            <h1 class="titulo-principal">Minha Gestante</h1>
+              <div class="container">
+                 
+                  
+                    <section>
+				<h2>Consultas</h2>
+				<table>
+					<tr>
+						<th>Data</th>
+						<th>Queixa</th>
+						<th>IG-semanas</th>
+                        <th>IMC</th>
+						<th>Edema</th>
+                        <th>Pressão arterial (mmHG)</th>
+						<th>Altura uterina (cm)</th>
+						<th>Apresentação fetal</th>
+						<th>BCF/Mov. fetall</th>
+                        <th>Toque</th>
+					</tr>
+					<tr class="paciente">
+						<td class="info-nome"></td>
+						<td class="info-peso"></td>
+						<td class="info-altura"></td>
+						<td class="info-imc"></td>
+                        <td class="info-fake"></td>
+                        <td class="info-fake"></td>
+                        <td class="info-fake"></td>
+                        <td class="info-fake"></td>
+                        <td class="info-fake"></td>
+                        <td class="info-fake"></td>
+                        
+					</tr>
+					<tr class="paciente">
+						<td class="info-nome"></td>
+						<td class="info-peso"></td>
+						<td class="info-altura"></td>
+						<td class="info-imc"></td>
+                        <td class="info-fake"></td>
+                        <td class="info-fake"></td>
+                        <td class="info-fake"></td>
+                        <td class="info-fake"></td>
+                        <td class="info-fake"></td>
+                        <td class="info-fake"></td>
+                        
+					</tr>
+					
+				</table>
+				<button id="calcula-imcs" class="botao ">Calcular Imcs</button>
+			</section>
+			<section>
+				<h2>Adicionar Historico</h2>	
+				<form>
+					<fieldset>
+						<label for="nome">Data</label>
+						<input id="campo-nome" type="text" placeholder="digite data">
+					</fieldset>
+					<fieldset class="campo-medio">
+						<label for="peso">Peso:</label>
+						<input id="campo-peso" type="text" placeholder="digite seu peso ">
+					</fieldset>
+					<fieldset class="campo-medio">
+						<label for="altura">Altura:</label>
+						<input id="campo-altura" type="text" placeholder="digite sua altura">
+					</fieldset>
+					<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+                      
+                  </form>
+            </section>
+            </div>
+         </main>    
+        <img src="mulher.jpg" alt="mulher de boa">
+        <aside class="navegacao-site">
+         <h1>Minha Gestante</h1>
+        <nav>
+            <ul>
+                <li><a href="bio.html">Home</a></li>
+                <li><a href="cadastro.html">Perfil</a></li>
+                <li><a href="Direitos.html">Direitos</a></li>
+                <li><a href="Adescobertadagravidez.html">Descoberta</a></li>
+                <li><a href="#3">Saudável</a></li>
+                <li><a href="#4">Você sabia?</a></li>
+                <li><a href="#5">O parto</a></li>
+            </ul>
+          </nav>
+        <ul class="icones-sociais">
+            <li><a class="github" href="">Girhub</a></li>
+            <li><a class="twitter" href="">Twitter</a></li>
+            <li><a class="facebook" href="">Facebook</a></li>
+        </ul>
+        </aside>
+        <footer class="rodape-pagina">
+        &copy Minha Gestante 2016
+        </footer>
+        
+        <script src="javascript/precorre.js"></script>
+        <script src="javascript/calcula-imc.js"></script>
+        <script src="javascript/imprime-nome.js"></script>
+        <script src="javascript/muda-de-cor.js"></script>
+        <script src="javascript/adiciona.js"></script>
+    </body>
+</html>
+   

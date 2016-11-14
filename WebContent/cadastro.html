@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	
+	
+	
+	
+	
+	
+    <h:head>
+        <title>Cadastro</title> 
+        <meta charset="utf-8">
+        
+        <link rel="icon" href="resources/img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="resources/css/reset.css" /> 
+        <link rel="stylesheet" type="text/css" href="resources/css/bio.css" /> 
+        <link rel="stylesheet" type="text/css" href="resources/css/contato.css" /> 
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        
+        
+    </head>
+    <h:body>
+        <main>
+            <h1 class="titulo-principal">Minha Gestante</h1>
+              <div class="container">
+                <h2 class="subtitulo-texto">Cadastros</h2>
+                
+                  <form>
+                    <fieldset>
+                        <legend>Seus dados</legend>
+                        <label class="com-icone" for="nome">Nome completo</label>
+                        <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres" >
+                        <label class="com-icone" for="senha">Senha:</label>
+                        <input id="senha" type="password" name="senha" required>
+                        <label class="com-icone" for="confsenha">Confimar Senha:</label>
+                        <input id="confsenha" type="password" name="confsenha" required>
+                        <label class="com-icone" for="apelido">Apelido/opcional:</label>
+                        <input id="apelido" type="text" name="apelido" >
+                        <label class="com-icone" for="companheiro">Nome do(a) companheiro(a) /opcional:</label>
+                        <input id="companheiro" type="text" name="companheiro" pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                        <label class="com-icone" for="nascimento">Data de nascimento:</label>
+                        <input id="nascimento" type="date" name="nascimento" required >
+                        <label class="com-icone" for="idade">Idade:</label>
+                        <input id="idade" type="number" name="idade" required >
+                        <label class="com-icone" for="ocupacao">Ocupação/opcional:</label>
+                        <input id="ocupacao" type="text" name="ocupacao" >
+                        <label class="com-icone" for="endereco">Endereço:</label>
+                        <input id="endereco" type="text" name="endereco" required>
+                        <label class="com-icone" for="referencia">Ponto de referência/opcional:</label>
+                        <input id="referencia" type="text" name="referencia" >
+                        <label class="com-icone" for="cidade">Cidade:</label>
+                        <input id="cidade" type="text" name="cidade" required>
+                        <label class="com-icone" for="estado">Estado:</label>
+                        <input id="estado" type="text" name="estado" required>
+                        <label class="com-icone" for="cep">CEP:</label>
+                        <input id="cep" type="text" name="cep"  required>
+                        <label class="com-icone" for="telfixo">Tel. fixo:</label>
+                        <input id="telfixo" type="text" name="telfixo" required >
+                        <label class="com-icone" for="telcelular">Tel. celular:</label>
+                        <input id="telcelular" type="text" name="telcelular" required >
+                        <label class="com-icone" for="email">E-mail</label>
+                        <input id="email" type="email" name="email" required placeholder="seu@email.com">
+                        
+                    </fieldset>
+                    <fieldset>
+                            <legend>Raça:</legend>
+                            <label>
+                                <input type="radio" name="raca" value="branca">
+                                Branca
+                            </label>
+                            <label>
+                                <input type="radio" name="raca" value="preta">
+                                Preta
+                            </label>
+                            <label>
+                                <input type="radio" name="raca" value="amarela">
+                                Amarela
+                            </label>
+                            <label>
+                                <input type="radio" name="raca" value="parda">
+                                Parda
+                            </label>
+                            <label>
+                                <input type="radio" name="raca" value="indigena">
+                                Indígena
+                            </label>    
+                    </fieldset>
+                    <fieldset>
+                            <legend>Trabalha fora de casa:</legend>
+                            <label>
+                                <input type="radio" name="trabalha" value="sim">
+                                Sim
+                            </label>
+                            <label>
+                                <input type="radio" name="trabalha" value="nao">
+                                Não
+                            </label> 
+                    </fieldset>
+                    <fieldset>
+                            <legend>Em situação de ermegência, ligar para:</legend>
+                            <label>
+                                <input type="radio" name="ermegencia" value="pai">
+                                Pai do bebê
+                            </label>
+                            <label>
+                                <input type="radio" name="ermegencia" value="mae">
+                                Minha mãe
+                            </label> 
+                            <label>
+                                <input type="radio" name="ermegencia" value="vizinha">
+                                Vizinha
+                            </label>
+                            <label>
+                                <input type="radio" name="ermegencia" value="outros">
+                                Outros
+                            </label>
+                            <label class="com-icone" for="nomeermegencia">Nome:</label>
+                            <input id="nomeermegencia" type="text" name="nomeermegencia" required  pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres" >
+                            <label class="com-icone" for="telefone">Telefone:</label>
+                            <input id="telefone" type="text" name="telefone" required >
+                        
+                            
+                     </fieldset>     
+                    <label for="mensagem">Observações</label>
+                    <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                    <button type="submit">Enviar Dados</button>
+                      
+                </form>
+                  
+                  
+                  
+            </div>
+         </main>    
+        <img src="resources/img/mulher.jpg" alt="mulher de boa">
+        <aside class="navegacao-site">
+         <h1>Minha Gestante</h1>
+        <nav>
+            <ul>
+                <li><a href="bio.html">Home</a></li>
+                <li><a href="cadastro.html">Perfil</a></li>
+                <li><a href="Examestabelas.html">Exames</a></li>
+                <li><a href="Direitos.html">Direitos</a></li>
+                <li><a href="Adescobertadagravidez.html">Descoberta</a></li>
+                <li><a href="#3">Saudável</a></li>
+                <li><a href="#4">Você sabia?</a></li>
+                <li><a href="#5">O parto</a></li>
+            </ul>
+          </nav>
+        <ul class="icones-sociais">
+            <li><a class="github" href="">Girhub</a></li>
+            <li><a class="twitter" href="">Twitter</a></li>
+            <li><a class="facebook" href="">Facebook</a></li>
+        </ul>
+        </aside>
+        <footer class="rodape-pagina">
+        &copy Minha Gestante 2016
+        </footer>
+    </body>
+</html>
+    

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	
+	
+	
+	
+<h:head>
+
+<title>inicial</title> 
+        <meta charset="utf-8"/>
+     
+
+</h:head>
+<h:body>
+ <h:form id="autor">
+				<p:fieldset legend="Dados do Usuario">
+					<h:panelGrid columns="2">
+
+						
+
+						
+						<p:outputLabel value="Email:" for="email" />
+						<p:inputText id="email" value="#{usuarioBean.usuario.email}" required="true" validatorMessage="Email inválido">
+							<f:attribute name="type" value="email" />
+							<f:passThroughAttribute name="placeholder" value="Email do autor" />
+							<f:validateRegex pattern=".+@.+" />
+							<f:ajax event="blur" render="messageEmail" />
+						</p:inputText> 
+						<p:message for="email" id="messageEmail" />
+						
+						<h:outputLabel for="pwd1" value="Password 1: *" />
+				        <p:password id="pwd1" value="#{usuarioBean.usuario.senha}" match="pwd2" label="Password 1" required="true" />
+				 
+				        <h:outputLabel for="pwd2" value="Password 2: *" />
+				        <p:password id="pwd2" value="#{usuarioBean.usuario.senha}" label="Password 2" required="true" />
+						
+						
+						
+						<p:commandButton value="Gravar" action="#{usuarioBean.gravar}"  />
+					</h:panelGrid>
+				</p:fieldset>
+			</h:form>
+
+
+
+</h:body>
+</html>

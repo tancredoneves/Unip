@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	
+	
+	
+	
+<h:head>
+
+<title>Gestacao</title> 
+        <meta charset="utf-8"/>
+     
+
+</h:head>
+<h:body>
+
+
+
+<p:layout style="min-width:400px;min-height:200px;">
+	<p:layoutUnit position="north" resizable="true" size="50" minSize="320" maxSize="320">
+	<p:graphicImage library="img" name="mulher.png" />
+	
+    </p:layoutUnit>
+    
+    
+
+    <p:layoutUnit position="west" resizable="true" size="150" minSize="200" maxSize="200">
+        <p:graphicImage library="img" name="mulher.jpg" />
+        
+        <h:form>
+			    <p:growl autoUpdate="true"/>
+			 
+			    <p:panelMenu style="width:300px" >
+			        <p:submenu label="Informações"  >
+			            <p:menuitem value="Sobre o Site" action="cadastro?faces-redirect=true" icon="ui-icon-help" />
+			            <p:menuitem value="empresa" action="cadastro?faces-redirect=true"  icon="ui-icon-help" />
+			    	</p:submenu>
+			    	<p:submenu label="Perfil">
+			    		<p:menuitem value="Conta" action="conta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-female"/>
+			            <p:menuitem value="Exames" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-paste"/>
+			            
+			        </p:submenu>
+			        <p:submenu label="Direitos">
+			            <p:menuitem value="Trabalhista" action="Trabalhista?faces-redirect=true" ajax="false" icon="fa fa-fw fa-gavel"/>
+			        </p:submenu>
+			       
+			        <p:separator />
+			        <p:submenu label="Gestação" >
+			            <p:menuitem value="Descoberta" action="Descoberta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-info"/>
+			            <p:menuitem value="meses" action="Gestacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-spinner"/>
+			            
+		            </p:submenu>
+			        <p:submenu label="Cuidados">
+			            <p:menuitem value="Cuidados" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-eye"/>
+			        </p:submenu>
+			        <p:submenu label="Sintomas">
+			            <p:menuitem value="Sintomas" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-user-md"/>
+			        </p:submenu>
+			        <p:submenu label="você sabia">
+			            <p:menuitem value="você sabia" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-smile-o"/>
+			        </p:submenu>
+			        <p:submenu label="Parto">
+			            <p:menuitem value="Parto" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			        </p:submenu>
+			        <p:submenu label="O Bebe">
+			            <p:menuitem value="O Bebe" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-child"/>
+			        </p:submenu>
+			        <p:submenu label="Logout">
+			            <p:menuitem value="Logout" action="#{loginBean.deslogar}" icon="fa fa-fw fa-sign-out"/>
+			        </p:submenu>
+			        
+			        
+        
+	    </p:panelMenu>
+	</h:form>     
+	</p:layoutUnit>
+ <p:layoutUnit position="center">
+        
+
+<p:panel header="Linha do tempo da Gravidez!" footer="Minha Gestante 2016" >
+
+			<h1>Os 3 primeiros meses da Gestação</h1>
+			<h2>1º trimestre – de 0 a 13 semanas</h2>
+			<p>Neste início ocorre a adaptação de seu corpo e de seus sentimentos, trazendo sensações ora de prazer, ora de desconforto.</p>
+			<p>Faz parte desse momento a oscilação entre a aceitação e a recusa da gravidez. Fique tranquila, o sentimento de não querer a gravidez pode acontecer e não causará danos ao bebê.</p>
+			<p>Você vai perceber o aumento dos seios, também pode sentir mais sono, mais fome, enjoos e até ficar mais cansada. Não se preocupe, tudo isso é comum! São as adaptações necessárias da gravidez.</p>
+			<p>É importante alimentar-se de maneira saudável, não ingerir bebida alcoólica nem fumar ou usar drogas. Nestes casos, peça ajuda ao profissional de saúde</p>
+			<p>A gravidez não causa cárie, mas as gengivas podem ficar mais sensíveis e ser facilmente irritadas pela placa bacteriana. Capriche na higiene bucal (utilize escova, pasta e fio dental), mantenha uma alimentação saudável, controle a quantidade de açúcares e faça acompanhamento durante o pré-natal com um dentista.</p>
+			<p>Durante as consultas você receberá orientações importantes para o cuidado com a saúde sua e de seu bebê. Uma boa higiene bucal da mãe cria um bom hábito de higiene na criança. Você deve comparecer mensalmente às consultas do pré-natal e fazer todos os exames solicitados. Aproveite para falar de suas preocupações e sentimentos.</p>
+			<br></br>
+			<p>Convide seu parceiro/pai do bebê a participar das consultas de pré-natal, caso seja de sua vontade. Pode ser um bom momento para fortalecer a relação de vocês e dele com o bebê. É também uma boa oportunidade para ele se cuidar. Se o pai for adolescente, tem os mesmos direitos de um pai adulto com relação a seu filho.</p>
+			<br></br>
+			<h3>Como seu bebê está se formando?</h3>
+			<p:graphicImage library="img" name="gestacao1.jpg" />	
+			<p>Seu bebê foi gerado a partir do encontro do espermatozoide do homem com o óvulo da mulher.</p>
+			<p>Com 4 semanas ele é do tamanho de um grão de arroz, seu coração começa a bater e aparecem pequenos brotos que serão depois os braços e as pernas.</p>
+			<p>• Ao final de 8 semanas já estão se formando os dedos, as mãos, as orelhas e os órgãos internos. Ele é do tamanho de uma ervilha e pesa mais ou menos 7 gramas.</p>
+			<p>• De 9 a 12 semanas (durante o 3º mês) seu rosto já está quase todo formado e os olhos já têm as pálpebras. Inicia-se o funcionamento do cérebro, e ele já se movimenta e mexe os braços e as pernas. Já se formou o cordão umbilical, que liga o bebê à placenta.</p>
+			<p>Ao final do 3º mês o coração já pode ser ouvido durante a consulta de pré-natal.</p>
+			<br></br>
+			<p>Você deve comparecer mensalmente às consultas do pré-natal e fazer todos os exames solicitados, para facilitar a sua organização e evitar que esqueça das consultas, criamos um calendário especialmente para a sua gravidez! Nele você pode agendar suas consultas e exames para que você seja notificado ao aproximar-se da data, também colocamos um campo de anotações para que você possa anotar suas dúvidas e perguntar ao seu médico. É importante que você tire todas as suas dúvidas!  </p>
+			<br></br>
+			<p:graphicImage library="img" name="gestacao2.png" />
+			<h1>Do 4º ao 6º mês</h1>
+			<h2>2º trimestre – de 14 a 26 semanas </h2>
+			<p>Neste segundo trimestre seu corpo e sua emotividade crescem. Você começa a perceber os primeiros movimentos dentro de sua barriga, que confirmam que seu bebê está bem pertinho de você. Isso pode trazer uma sensação muito boa, que fortalecerá sua ligação com seu filho. É um período de grande bem-estar. Aproveite!</p>
+			<p>Nessa época seu corpo vai mudar muito rápido, com crescimento da barriga e alterações nos seios e nos quadris.</p>
+			<p>As sensações iniciais de desconforto desaparecem, dando lugar a sentimentos de plenitude e muita disposição, e sua barriga vai ser notada pelas pessoas.</p>
+			<br></br>
+			<p>Dica: você pode ficar ansiosa para saber o sexo de seu bebê. Tenha calma, principalmente se você tem alguma preferência de sexo. Pense que a surpresa de quem vai chegar poderá ser maior se você ainda não souber se é menina ou menino.</p>
+			<br></br>
+			<p>Você pode e deve fazer tratamento odontológico durante a gravidez. É seguro para você e protegerá seu bebê contra infecções e outros problemas. Este é o período mais adequado para a realização dos procedimentos.</p>
+			<p>Enquanto isso, dentro de sua barriga...</p>
+			<p>• Entre 13 e 14 semanas iniciam-se os movimentos respiratórios e das mãozinhas.</p>
+			<p>• Entre 15 e 16 semanas a pele, ainda transparente, começa a se engrossar. O bebê já tem cílios e sobrancelhas e seus movimentos começam a ser percebidos. O coração bate muito mais rápido do que o seu.
+			</p>
+			<p>• Entre 17 e 18 semanas ele pode medir de 17 cm a 20 cm e pesar de 200 gramas a 250 gramas. Já consegue sugar, engolir e piscar. Ele pode soluçar, o que é normal.
+			</p>
+			<p:graphicImage library="img" name="gestacao3.png" />
+			<p>• Entre 20 e 24 semanas ele mede em torno de 26 cm e seu peso médio é de 500 gramas. Os movimentos ficam mais intensos e você os percebe bem. Há momentos em que ele está dormindo e momentos em que fica acordado. Todo o seu organismo está funcionando em harmonia. Ele se alimenta por meio do cordão umbilical e da placenta.</p>
+			<br></br>
+			<p>Dica: Em alguns momentos do dia, procure ficar mais tranquila para perceber as sensações de seu corpo. Coloque as mãos na barriga, feche os olhos e sinta o que está acontecendo. Isso pode lhe trazer confiança e diminuir suas preocupações.</p>
+			<br></br>
+			<h1>7º ao 9º mês – É hora de fazer o ninho!</h1>
+			<h2>Último trimestre – de 27 a 40/41 semanas</h2>
+			<p>O final da gestação é o momento em que tanto você quanto seu bebê se preparam para uma grande mudança. O bebê tem menos espaço dentro de sua barriga, o que dá a sensação de peso e desconforto. Você pode sentir menos sono</p>
+			<p>Seu corpo está se preparando para o parto e para acolher quem vai chegar. Seu útero pode ficar durinho por instantes, mas você não sentirá dor, apenas uma leve sensação de endurecimento. Poderá sair de seu peito um líquido amarelado, chamado colostro, que vai alimentar seu bebê nos primeiros dias de vida.</p>
+			<p>Essa é uma época de ansiedade com o parto. O medo do desconhecido é natural. Procure conversar com quem possa lhe passar confiança e deixá-la mais tranquila. Observar os movimentos do bebê é uma forma de saber se ele está bem. Algumas vezes, no final da gravidez, pode ser mais difícil você perceber esses movimentos. Não se preocupe se em algum período ele não se mexer, pois pode estar dormindo.</p>
+			<br></br>
+			<p:graphicImage library="img" name="gestacao4.png" />
+			<h2>Preparando para nascer...</h2>
+			<p>Nos últimos três meses da gestação a maioria dos bebês se coloca de cabeça para baixo. Ele tem o próprio ritmo de dormir e acordar e começa a dar sinais de querer nascer, com o surgimento das primeiras contrações.</p>
+			<p>De 27 a 30 semanas ele pode pesar 1 kg e medir cerca de 32 cm. Já percebe a luz fora do útero, abre e fecha os olhos. Escuta e identifica vários sons, como vozes e músicas, e pode se assustar com barulhos altos e repentinos. O espaço dentro do útero vai ficar cada vez mais apertado. Com 32 semanas já pesa 2 kg. Sua pele fica coberta por um tipo de creme branco, o vérnix, que traz proteção e o ajudará a se deslizar pelo canal do parto.</p>
+			<p>Ele já está todo formado, mas não está maduro. Falta pouco, mas é preciso ter paciência para esperar o tempo certo de nascer. A natureza sabe o melhor momento! Antecipar o parto sem necessidade é prejudicial para você e seu bebê.</p>
+			<h2>Prematuro</h2>
+			<p>Se o seu bebê chegar antes da hora e precisar de cuidados especiais, você tem direito a ficar perto dele no hospital, como acompanhante, durante todo o tempo.</p>
+			
+			
+			
+        
+</p:panel>
+
+
+</p:layoutUnit>
+
+</p:layout>
+
+
+</h:body>
+</html>

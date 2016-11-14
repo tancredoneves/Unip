@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+  
+	<ui:composition template="_template.xhtml">
+	
+		
+
+		<ui:define name="titulo">
+			<p:outputPanel>Cadastros</p:outputPanel>
+		</ui:define>
+
+		<ui:define name="conteudo">
+			<h:form id="autor">
+				<p:fieldset legend="Seus dados">
+					<h:panelGrid columns="2" cellpadding="5">
+
+						<p:outputLabel value="Nome:" for="nome" />
+						<p:inputText id="nome" value="#{usuarioBean.usuario.nome}"  required="true" >
+							<f:validateLength minimum="5" />
+							<f:ajax event="blur" render="messageNome" />
+						</p:inputText>
+						
+						<p:outputLabel value="Email:" for="email" />
+						<p:inputText id="email" value="#{usuarioBean.usuario.email}" required="true" validatorMessage="Email inválido">
+							<f:attribute name="type" value="email" />
+							<f:passThroughAttribute name="placeholder" value="Email" />
+							<f:validateRegex pattern=".+@.+" />
+							<f:ajax event="blur" render="messageEmail" />
+						</p:inputText> 
+						 
+						<h:outputLabel for="pwd1" value="Password 1: *" />
+				        <p:password id="pwd1" value="#{usuarioBean.usuario.senha}" match="pwd2" label="Password 1" required="true" />
+				 
+				        <h:outputLabel for="pwd2" value="Password 2: *" />
+				        <p:password id="pwd2" value="#{usuarioBean.usuario.email}" label="Password 2" required="true" />
+				        			         
+				         <h:outputText for="ape" value="Apelido/Opcional"/>
+				         <p:inputText  id="ape" value="#{usuarioBean.usuario.apelido}"/>
+				         
+				         <h:outputText for="comp" value="Nome do(a) companheiro(a) /opcional:"/>
+				         <p:inputText  id="comp" value="#{usuarioBean.usuario.companheiro}" />
+				         
+				         <p:outputLabel for="dateNas" value="Data de nascimento:" />
+      					 <p:calendar id="dateNas" value="#{usuarioBean.usuario.nascimento.time}" timeZone="America/Sao_Paulo" pattern="dd/MM/yyyy" mask="true"/>
+				         
+				         <p:outputLabel for="idade" value="Idade:" />
+       					 <p:spinner id="idade" value="#{usuarioBean.usuario.idade}" mask="99"/>
+       					 <h:outputText for="ocup" value="Ocupação/opcional:"/>
+				         <p:inputText id="ocup" value="#{usuarioBean.usuario.ocupacao}"/>
+				         
+				         <h:outputText for="end" value="Endereço:"/>
+				         <p:inputText  id="end" value="#{usuarioBean.usuario.endereco}"/>
+				         
+				         <h:outputText for="ponto" value="Ponto de referência/opcional:"/>
+				         <p:inputText for="ponto" value="#{usuarioBean.usuario.referencia}"/>
+				         
+				         <h:outputText for="cidade" value="Cidade:"/>
+				         <p:inputText for="cidade"  value="#{usuarioBean.usuario.cidade}"/>
+				         
+				         <h:outputText for="estado" value="Estado:"/>
+				         <p:inputText for="estado"  value="#{usuarioBean.usuario.estado}"/>
+				         
+				         <p:outputLabel for="taxCEP" value="CEP:" />
+       					 <p:inputMask id="taxCEP" value="#{usuarioBean.usuario.cep}" mask="99999-999"/>
+				         
+				         
+				         <p:outputLabel for="phonefixo" value="Tel. fixo:" />
+				         <p:inputMask id="phonefixo" value="#{usuarioBean.usuario.fixo}" mask="(999) 9999-9999"/>
+				         
+				         <p:outputLabel for="phonecelular" value="Tel. celular:" />
+				         <p:inputMask id="phonecelular" value="#{usuarioBean.usuario.celular}" mask="(999) 99999-9999"/>
+				         
+				         <h:outputText value="Apelido/Opcional"/>
+				         <p:inputText  />
+						
+						
+       					 
+       					<!--  <p:outputLabel for="enumRaca" value="Raça" />
+       					 <p:selectOneMenu id="enumRaca"  value="#{usuarioBean.enumTipoRaca}">
+						    <f:selectItens value="#{JsfProjectStages.ALL_ENUM_VALUES}" var="e"
+						                  itemLabel="#{e}" itemValue="#{e}" />
+						</p:selectOneMenu>--> 
+       					 
+       					<!--   <p:outputLabel for="enumRaca" value="Raça" />
+       					 <p:selectOneMenu id="enumRaca" value="#{usuarioBean.enumTipoRaca}">
+						    <f:selectItems value="#{usuarioBean.enumTipoRaca}" var="tipoRaca" itemLabel="#{tipoRaca.tipo}" itemValue="#{tipoRaca}"/>
+						 </p:selectOneMenu> --> 
+						<p:commandButton value="Gravar" action="#{usuarioBean.gravar}" process="@form" update="@form" />
+						
+					</h:panelGrid>
+					
+				</p:fieldset>
+				
+			</h:form>
+			
+		</ui:define>
+
+	</ui:composition>
+
+</html>

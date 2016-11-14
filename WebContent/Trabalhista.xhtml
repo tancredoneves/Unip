@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	
+	
+	
+	
+<h:head>
+
+<title>Trabalhista</title> 
+        <meta charset="utf-8"/>
+     
+
+</h:head>
+<h:body>
+
+
+
+<p:layout style="min-width:400px;min-height:200px;">
+	<p:layoutUnit position="north" resizable="true" size="50" minSize="320" maxSize="320">
+	<p:graphicImage library="img" name="mulher.png" />
+	
+    </p:layoutUnit>
+    
+    
+
+    <p:layoutUnit position="west" resizable="true" size="150" minSize="200" maxSize="200">
+        <p:graphicImage library="img" name="mulher.jpg" />
+        
+        <h:form>
+			    <p:growl autoUpdate="true"/>
+			 
+			    <p:panelMenu style="width:300px" >
+			        <p:submenu label="Informações"  >
+			            <p:menuitem value="Sobre o Site" action="cadastro?faces-redirect=true" icon="ui-icon-help" />
+			            <p:menuitem value="empresa" action="cadastro?faces-redirect=true"  icon="ui-icon-help" />
+			    	</p:submenu>
+			    	<p:submenu label="Perfil">
+			    		<p:menuitem value="Conta" action="conta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-female"/>
+			            <p:menuitem value="Exames" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-paste"/>
+			            
+			        </p:submenu>
+			        <p:submenu label="Direitos">
+			            <p:menuitem value="Trabalhista" action="Trabalhista?faces-redirect=true" ajax="false" icon="fa fa-fw fa-gavel"/>
+			        </p:submenu>
+			        <p:submenu label="Descoberta">
+			            <p:menuitem value="Descoberta" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-info"/>
+			        </p:submenu>
+			        <p:separator />
+			        <p:submenu label="Gestação" >
+			            <p:submenu label="meses" icon="fa fa-fw fa-spinner">
+			                
+                    <p:menuitem value="1º trimestre" url="http://www.primefaces.org" icon="fa fa-fw fa-spinner" />
+                    <p:menuitem value="2º trimestre" url="http://www.primefaces.org/documentation" icon="fa fa-fw fa-spinner" />
+                    <p:menuitem value="3º trimestre" url="http://www.primefaces.org/downloads" icon="fa fa-fw fa-spinner" />
+                    
+	                </p:submenu>
+		            </p:submenu>
+			        <p:submenu label="Cuidados">
+			            <p:menuitem value="Cuidados" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-eye"/>
+			        </p:submenu>
+			        <p:submenu label="Sintomas">
+			            <p:menuitem value="Sintomas" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-user-md"/>
+			        </p:submenu>
+			        <p:submenu label="você sabia">
+			            <p:menuitem value="você sabia" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-smile-o"/>
+			        </p:submenu>
+			        <p:submenu label="Parto">
+			            <p:menuitem value="Parto" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			        </p:submenu>
+			        <p:submenu label="O Bebe">
+			            <p:menuitem value="O Bebe" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-child"/>
+			        </p:submenu>
+			        <p:submenu label="Logout">
+			            <p:menuitem value="Logout" action="#{loginBean.deslogar}" icon="fa fa-fw fa-sign-out"/>
+			        </p:submenu>
+			        
+			        
+        
+	    </p:panelMenu>
+	</h:form>     
+	</p:layoutUnit>
+ <p:layoutUnit position="center">
+        
+
+<p:panel header="Trabalhista" footer="Minha Gestante 2016" >
+
+			<h1>Conheça seus direitos mamãe:</h1>
+			<br></br>
+			<h3>Direitos Trabalhistas:</h3>        
+            <p>• Licença-maternidade de 120 (cento e vinte) dias para gestantes com carteira de trabalho assinada.</p>
+            <p>• Não ser demitida enquanto estiver grávida e até cinco meses após o parto, a não ser por “justa causa”.</p>
+            <p>• Mudar de função ou setor em seu trabalho, caso ele apresente riscos ou problemas para sua saúde ou à saúde do bebê. Para isso, apresente à sua chefia um atestado médico comprovando que você precisa mudar de função.</p>
+            <p>• Receber DECLARAÇÃO DE COMPARECIMENTO sempre que for às consultas de pré-natal ou fizer algum exame. Apresentando esta declaração à sua chefia, você terá a falta justificada no trabalho.</p>
+            <p>• Até o bebê completar seis meses, você tem o direito de ser dispensada do trabalho todos os dias, por dois períodos de meia hora ou um período de uma hora, para amamentar. Combine com seu empregador o melhor jeito de aproveitar esse tempo.</p>
+            <p>• Licença de cinco dias para o pai logo após o nascimento do bebê.</p>
+            <br></br>
+            <h3>Além disso, tem os direitos sociais:</h3>
+            <p>• Guichês e caixas especiais ou prioridade nas filas para atendimento em instituições públicas e privadas (bancos, supermercados, lojas).</p>
+            <p>• Assento prioritário para gestantes e mulheres com bebê no colo em ônibus e metrô. Peça licença e ocupe o lugar que é seu. Não viaje em pé! No ônibus você pode sair pela porta da frente.</p>
+            <p>• Se a sua família é beneficiária do Bolsa Família, você tem direito ao benefício variável extra na gravidez e durante a amamentação.</p> 
+            <br></br>
+            <h3>Entrega em adoção:</h3>
+            <p>• A Lei nº 12.010/2009 garante a você o direito de receber atendimento psicossocial gratuito se desejar, precisar ou decidir entregar a criança em adoção. Procure a Vara da Infância e Juventude de sua cidade.</p>
+            <br></br>
+            <h3>Se você for estudante, também tem seus direitos garantidos:</h3>
+            <p>• A Lei nº 6.202/1975 garante à estudante grávida o direito à licença-maternidade sem prejuízo do período escolar.</p>
+            <p>• A partir do oitavo mês de gestação a gestante estudante poderá cumprir os compromissos escolares em casa – Decreto-Lei nº 1.044/1969.</p>
+            <p>• início e o fim do período de afastamento serão determinados por atestado médico a ser apresentado à direção da escola.</p>
+            <p>• Em qualquer caso, é assegurado às estudantes grávidas o direito à prestação dos exames finais.</p>
+            <br></br>
+            <h3>Direitos nos serviços de saúde:</h3>
+            <p>• Ser atendida com respeito e dignidade pela equipe, sem discriminação de cor, raça, orientação sexual, religião, idade ou condição social.</p>
+            <p>• Ser chamada pelo nome que preferir e saber o nome do profissional que a atende.</p>
+            <p>• Aguardar o atendimento sentada, em lugar arejado, tendo à sua disposição água para beber e banheiros limpos.</p>
+            <br></br>
+            <h3>Lei da vinculação para o parto:</h3>
+            <p>• Lei Federal nº 11.340/2007, que garante à gestante o direito de ser informada anteriormente, pela equipe do pré-natal, sobre qual a maternidade de referência para seu parto e de visitar o serviço antes do parto.</p>
+            <br></br>
+            <h2>GESTANTE E BEBÊ SEMPRE TÊM O DIREITO A VAGA!</h2>
+            <p>• Para o parto você deve ser atendida no primeiro serviço de saúde que procurar. Em caso de necessidade de transferência para outro serviço de saúde, o transporte deverá ser garantido de maneira segura.</p>
+            <br></br>
+            <h3>Lei do direito a acompanhante no parto:</h3>
+            <p>• Lei Federal nº 11.108/2005, que garante às parturientes o direito a acompanhante durante todo o período de trabalho de parto, no parto e no pós-parto, no SUS. Este acompanhante é escolhido por você, podendo ser homem ou mulher.</p>
+            <br></br>
+            <h3>Violências na gravidez:</h3>
+            <p>• Se você sofrer qualquer tipo de violência física, sexual ou psicológica por parte de pessoas próximas ou desconhecidas e desejar ajuda do serviço de saúde, converse com o profissional que a está atendendo. Procure orientações para defender seus direitos e não permitir que aconteça novamente. Ligue 180 ou Disque Saúde – 136, de forma gratuita, e denuncie. </p>
+            
+            
+            
+</p:panel>
+
+
+</p:layoutUnit>
+
+</p:layout>
+
+
+</h:body>
+</html>

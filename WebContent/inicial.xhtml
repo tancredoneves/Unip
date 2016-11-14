@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	
+	
+	
+	
+<h:head>
+
+<title>inicial</title> 
+        <meta charset="utf-8"/>
+     
+
+</h:head>
+<h:body>
+
+
+
+<p:layout style="min-width:400px;min-height:200px;">
+	<p:layoutUnit position="north" resizable="true" size="50" minSize="320" maxSize="320">
+	<p:graphicImage library="img" name="mulher.png" />
+	
+    </p:layoutUnit>
+    
+    
+
+    <p:layoutUnit position="west" resizable="true" size="150" minSize="200" maxSize="200">
+        <p:graphicImage library="img" name="mulher.jpg" />
+        
+        <h:form>
+			    <p:growl autoUpdate="true"/>
+			 
+			    <p:panelMenu style="width:300px" >
+			        <p:submenu label="Informações"  >
+			            <p:menuitem value="Sobre o Site" action="cadastro?faces-redirect=true" icon="ui-icon-help" />
+			            <p:menuitem value="empresa" action="cadastro?faces-redirect=true"  icon="ui-icon-help" />
+			    	</p:submenu>
+			    	<p:submenu label="Perfil">
+			    		<p:menuitem value="Conta" action="conta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-female"/>
+			            <p:menuitem value="Exames" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-paste"/>
+			            
+			        </p:submenu>
+			        <p:submenu label="Direitos">
+			            <p:menuitem value="Trabalhista" action="Trabalhista?faces-redirect=true" ajax="false" icon="fa fa-fw fa-gavel"/>
+			        </p:submenu>
+			       
+			        <p:separator />
+			        <p:submenu label="Gestação" >
+			            <p:menuitem value="Descoberta" action="Descoberta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-info"/>
+			            <p:menuitem value="meses" action="Gestacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-spinner"/>
+			            
+		            </p:submenu>
+			        <p:submenu label="Cuidados">
+			            <p:menuitem value="Cuidados" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-eye"/>
+			        </p:submenu>
+			        <p:submenu label="Sintomas">
+			            <p:menuitem value="Sintomas" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-user-md"/>
+			        </p:submenu>
+			        <p:submenu label="você sabia">
+			            <p:menuitem value="você sabia" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-smile-o"/>
+			        </p:submenu>
+			        <p:submenu label="Parto">
+			            <p:menuitem value="Parto" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			        </p:submenu>
+			        <p:submenu label="O Bebe">
+			            <p:menuitem value="O Bebe" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-child"/>
+			        </p:submenu>
+			        <p:submenu label="Logout">
+			            <p:menuitem value="Logout" action="#{loginBean.deslogar}" icon="fa fa-fw fa-sign-out"/>
+			        </p:submenu>
+			        
+			        
+        
+	    </p:panelMenu>
+	</h:form>     
+	</p:layoutUnit>
+ <p:layoutUnit position="center">
+        
+
+<p:panel header="Home" footer="Minha Gestante 2016" >
+        <p:panelGrid columns="2" columnClasses="ui-grid-col-4,ui-grid-col-8" layout="grid" styleClass="ui-panelgrid-blank">
+            <p:graphicImage library="img" name="esboco-da-mulher-gravida.png"  />
+            
+            <h:outputText
+                value="Toda mulher tem direito ao atendimento na gravidez, no parto e após o parto e pode contar com a Rede Cegonha, uma ação de saúde do SUS que fortalece os direitos das mulheres e das crianças.
+                O Ministério da Saúde, em conjunto com as Secretarias Estaduais, Municipais e do Distrito Federal, elaborou esta Caderneta da Gestante pensando em você, que vive um dos momentos mais intensos de sua vida.
+                Aqui você vai encontrar vários assuntos:
+                • seus direitos antes e dep ois do parto;
+				• o cartão de consultas e exames, com espaço para você anotar suas dúvidas;
+				• dicas para uma gravidez saudável e s inais de a lerta;
+				• informações e orientações sobre a gestação e o desenvolvimento do bebê, a lguns cuidados de s aúde, o parto e o p ós-parto;
+				• informações e orientações sobre amamentação;
+				• como tirar a Certidão de Nascim ento de seu filho.
+				O profissional de saúde anotará nesta caderneta todos os dados de seu pré-natal e escreverá o resultado das consultas, dos exames, das vacinas e o que f or importante para um bom acompanhamento do pré-natal.
+				Aqui tem também espaço para você anotar suas sensações e seus sentimentos, coisas que que ira dizer para seu bebê e colar fotografias.
+				Um pré-natal bem acompanhado resultará em mais saúde para você e seu bebê. Guarde esta caderneta com carinho e cuidado e traga-a sempre com você.
+                Ela será uma grande amiga e conselheira." />
+        </p:panelGrid>
+    </p:panel>
+
+
+</p:layoutUnit>
+
+</p:layout>
+
+
+</h:body>
+</html>
