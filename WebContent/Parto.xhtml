@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	
+	
+	
+	
+<h:head>
+
+<title>parto</title> 
+        <meta charset="utf-8"/>
+     
+
+</h:head>
+<h:body>
+
+
+
+<p:layout style="min-width:400px;min-height:200px;">
+	<p:layoutUnit position="north" resizable="true" size="50" minSize="320" maxSize="320">
+	<p:graphicImage library="img" name="mulher.png" />
+	
+    </p:layoutUnit>
+    
+    
+
+    <p:layoutUnit position="west" resizable="true" size="150" minSize="200" maxSize="200">
+        <p:graphicImage library="img" name="mulher.jpg" />
+        
+        <h:form>
+			    <p:growl autoUpdate="true"/>
+			 
+			    <p:panelMenu style="width:300px" >
+			        <p:submenu label="Informações"  >
+			            <p:menuitem value="Sobre o Site" action="cadastro?faces-redirect=true" icon="ui-icon-help" />
+			            <p:menuitem value="empresa" action="cadastro?faces-redirect=true"  icon="ui-icon-help" />
+			    	</p:submenu>
+			    	<p:submenu label="Perfil">
+			    		<p:menuitem value="Conta" action="conta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-female"/>
+			            <p:menuitem value="Exames" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-paste"/>
+			            
+			        </p:submenu>
+			        <p:submenu label="Direitos">
+			            <p:menuitem value="Trabalhista" action="Trabalhista?faces-redirect=true" ajax="false" icon="fa fa-fw fa-gavel"/>
+			        </p:submenu>
+			       
+			        <p:separator />
+			        <p:submenu label="Gestação" >
+			            <p:menuitem value="Descoberta" action="Descoberta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-info"/>
+			            <p:menuitem value="meses" action="Gestacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-spinner"/>
+			            
+		            </p:submenu>
+			        <p:submenu label="Cuidados">
+			            <p:menuitem value="Alimentação" action="Cuidados?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Sexo na gestação" action="Sexo?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Sono" action="Sono?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Exercicios" action="Exercicios?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			        </p:submenu>
+			        <p:submenu label="Sistomas">
+			            <p:menuitem value="Sintomas" action="Sintomas?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-user-md"/>
+			        </p:submenu>
+			        <p:submenu label="Curiosidades">
+			            <p:menuitem value="Você sabia?" action="Sabia?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			            <p:menuitem value="Pré-Natal" action="PreNatal?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			            <p:menuitem value="Exames e Vacinas" action="ExamesEvac?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			        </p:submenu>
+			        <p:submenu label="Parto">
+			            <p:menuitem value="Parto" action="Parto?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			        	<p:menuitem value="Cesarea" action="Cesarea?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			        </p:submenu>
+			        <p:submenu label="O Bebe">
+			            <p:menuitem value="O Bebe" action="Bebe?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Primeiros Cuidados " action="Primeiros?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Seus Cuidados" action="seuscuidados?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Amamentação" action="Amamentacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			        </p:submenu>
+			        <p:submenu label="Logout">
+			            <p:menuitem value="Logout" action="#{loginBean.deslogar}" icon="fa fa-fw fa-sign-out"/>
+			        </p:submenu>
+			        
+			        
+        
+	    </p:panelMenu>
+	</h:form>     
+	</p:layoutUnit>
+<p:layoutUnit position="center">
+<p:panel header="Parto" footer="Minha Gestante 2016" >
+
+        <h1>O Parto</h1>
+         <p>O parto está cada dia mais perto! Você conseguiu organizar as roupas e as fraldas de que seu bebê vai precisar? Se tiver dificuldades com o enxoval, peça orientações na Unidade de Saúde sobre locais de apoio para esse fim em seu município. Peça a seu(sua) companheiro(a) ou alguém próximo de você para ajudá-la nas seguintes tarefas:</p>
+         <p>Organizar documentos para levar no momento do parto e para entrar com a licença-maternidade. </p>
+         <p>Fazer a lista de telefones úteis.</p>
+         <p>Comprar mantimentos para quando vocês chegarem da maternidade. </p>
+         <p>Colocar na sacola o que vocês vão levar: – roupas e fraldas para o bebê, roupas para você, absorventes, casaco ou manta para seu acompanhante durante a noite, produtos de higiene pessoal; </p>
+         <p>Carteira de Identidade ou Certidão de Nascimento; </p>
+         <p>A caderneta da gestação e a Caderneta de Saúde, se for adolescente; – cartão do SUS, se possuir. </p>
+         <p>Se você é estudante, já solicitou o atestado para o afastamento de suas atividades escolares? Se você tem outros filhos, quem ficará com eles enquanto estiver na maternidade? Você já escolheu quem será seu acompanhante? Tudo isso deve ser pensando nesse momento mamãe! Você já visitou a maternidade? Conhecer a maternidade pode deixar você mais confiante e tranquila no momento do parto.</p>
+         <br></br>
+         <h3>Proximo ao parto</h3>
+         <p>Mamãe, boas notícias! Seu útero já está se preparando para o parto. Perto da data do parto você poderá sentir sua barriga endurecer, como contrações que não duram muito tempo. Antes de pensar em sair para o hospital, tome um banho, repouse e veja se essas contrações continuam fortes e regulares. Pode ser que ainda não seja o trabalho de parto, mas só um treino. Dias antes do parto poderá sair por sua vagina um muco grosso amarelado, como uma clara de ovo, com rajas de sangue, o tampão mucoso. Este é um sinal de que o parto está próximo. </p>
+         <h3>Como identificar o trabalho de parto (sub topico do menu)</h3>
+         <p>O trabalho de parto pode durar em média de 8 a 12 horas. O medo e o estresse podem prolongar esse período; sentir-se tranquila e confiante pode ajudar a diminuí-lo. Portanto, não se apavore quando surgirem os primeiros sinais; você terá tempo suficiente para se organizar e chegar ao local do parto. Sinais que indicam o início do trabalho de parto: </p>
+         <p>• Se a sua barriga endurecer a cada 5 minutos, por 30 segundos ou mais, permanecendo assim por mais de uma hora. </p>
+         <p>• Se você perder líquido pela vagina, que escorra pelas pernas, molhe a roupa ou a cama (rompimento da bolsa das águas). Neste caso, mesmo que não sinta as contrações, você deve ir à maternidade, pois precisa ser avaliada por um profissional.</p>
+         <h3>O que vai acontecer quando você e seu acompanhante chegarem à maternidade?</h3>
+         <p>Vocês serão acolhidos e você será examinada por um(a) profissional de saúde, que irá: </p>
+         <p>• ouvir sua história e dar informações sobre o parto; </p>
+         <p>• medir sua barriga e as contrações do útero; </p>
+         <p>• verificar a pressão arterial e escutar o coração do bebê; </p>
+         <p>• fazer um toque vaginal para ver se já começou a dilatação (abertura) do colo de seu útero para o bebê passar e confirmar se você está em trabalho de parto; </p>
+         <p>• combinar com você os próximos passos. </p>
+         <h3>Parto e nascimento: experiências que fortalecem a mulher e o bebê.</h3>
+         <p>O parto é um momento de grande intensidade, uma vivência que marca para sempre a vida de uma mulher. É a preparação natural para a maternidade. Você terá a chance de experimentar sensações e sentimentos que podem fortalecê-la enquanto mulher e mãe. As contrações do trabalho de parto são como uma massagem para estimular seu bebê para a vida. Portanto, mesmo que seu parto tenha que ser uma cesariana, é importante para você e seu bebê passar pelo trabalho de parto. Para o bebê o trabalho de parto é um amadurecimento dos pulmões e do sistema de defesa natural do organismo. Durante todo o período de internação para o parto você tem o direito, garantido por lei, a um acompanhante de sua escolha. Alguns serviços de saúde contam com a presença de doulas, mulheres preparadas para lhe dar apoio e ajudar no que for preciso.</p>
+         <br></br>
+         <h3>Trabalho de parto</h3>
+         <p>Algumas coisas que você deve saber para ter um bom parto: </p>
+         <p>Você tem direito a um ambiente sossegado, privativo, arejado, sem ruídos, só para você e seu acompanhante, durante o trabalho de parto e o parto. É fundamental que você seja apoiada por pessoas que lhe tragam ânimo e confiança! Existem vários procedimentos que não devem ser realizados de rotina, mas apenas em algumas situações, como, por exemplo: </p>
+         <p>• Lavagem intestinal – é desagradável e desnecessária; durante o trabalho de parto você esvaziará seu intestino naturalmente.</p>
+         <p>• Raspagem dos pelos íntimos – não é preciso fazer; nem em casa, nem quando chegar à maternidade. Seus pelos são uma proteção natural para a vagina.</p>
+         <p>• Romper a bolsa das águas – o rompimento artificial da bolsa aumenta os riscos de infecção e problemas com o cordão umbilical do bebê. </p>
+         <p>• Soro com ocitocina – torna as contrações mais incômodas e dificulta sua movimentação.</p>
+         <p>• Episiotomia – é um pique na vagina; pode causar dor e desconforto após o parto e aumentar os riscos de infecção.</p>
+         <br></br>
+         <h3>O que você pode fazer para favorecer seu parto</h3>
+         <p:graphicImage library="img" name="parto1.png" />
+         <p>Você pode mudar de posição, buscando maior conforto em cada momento: sentada, deitada de lado, ajoelhada, de cócoras, sentada na bola ou no banquinho, de quatro, de pé e caminhando. Estas posições podem aliviar a dor.</p>
+         <p>• Caminhar e movimentar-se pode diminuir o tempo do parto.</p>
+         <p>• Tomar banho de chuveiro ou banheira é um ótimo método para aliviar a dor.</p>
+         <p>• Beber água e comer alimentos leves dão mais força e energia para você e seu bebê.</p>
+         <p>• Respirar profundamente, no ritmo da contração, facilita a abertura e a saída do bebê. Algumas posições e massagens ajudam a aliviar a dor. Experimente!</p>
+         <h3>Posições de parto</h3>
+         <p>A posição de cócoras ajuda muito no parto.</p>
+         <p>A bola ajuda o bebê a se encaixar melhor, a dilatar mais rápido e a aliviar a dor.</p>
+         <p>ebaixo do chuveiro pode ser melhor ainda. </p>
+         <p>Ficar agachada ou de joelhos ou de quatro pode facilitar o parto, experimente.</p>
+         <p>Ficar apoiada em seu(sua) acompanhante pode ajudar a dar força no período final do parto. </p>
+         <p>Encontre a posição que achar mais fácil. Pense em algumas coisas que podem ajudá-la no trabalho de parto. Por exemplo, ouvir música . </p>
+         <h3>O parto</h3>
+         <p:graphicImage library="img" name="parto2.png" />
+         <p>O parto é uma grande experiência para a mulher e o bebê, e também para o pai. Pode ser um momento de grande prazer: a saída do bebê, o fim das contrações e o encontro com esse pequeno ser. Você deve ter ouvido falar várias coisas sobre a dor do parto. É importante saber que essa dor varia de intensidade de mulher para mulher e se torna maior se a mulher está tensa e com medo. Você está acostumada a ver as mulheres deitadas para o parto, mas as posições de cócoras, sentada ou de joelhos são melhores para favorecer a saída do bebê: o canal de parto fica mais curto, a abertura da vagina fica maior e a circulação de oxigênio para o bebê é melhor. Experimente e encontre a posição mais adequada para você.</p>
+         
+			
+</p:panel>
+</p:layoutUnit>
+</p:layout>
+</h:body>
+</html>

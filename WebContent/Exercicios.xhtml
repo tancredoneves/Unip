@@ -11,7 +11,7 @@
 	
 <h:head>
 
-<title>Descoberta</title> 
+<title>inicial</title> 
         <meta charset="utf-8"/>
      
 
@@ -34,7 +34,7 @@
         <h:form>
 			    <p:growl autoUpdate="true"/>
 			 
-			   <p:panelMenu style="width:300px" >
+			    <p:panelMenu style="width:300px" >
 			        <p:submenu label="Informações"  >
 			            <p:menuitem value="Sobre o Site" action="cadastro?faces-redirect=true" icon="ui-icon-help" />
 			            <p:menuitem value="empresa" action="cadastro?faces-redirect=true"  icon="ui-icon-help" />
@@ -60,23 +60,17 @@
 			            <p:menuitem value="Sono" action="Sono?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
 			            <p:menuitem value="Exercicios" action="Exercicios?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
 			        </p:submenu>
-			        <p:submenu label="Sistomas">
-			            <p:menuitem value="Sintomas" action="Sintomas?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-user-md"/>
+			        <p:submenu label="Sexo">
+			            <p:menuitem value="Sexo na gestação" action="Sexo?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-user-md"/>
 			        </p:submenu>
-			        <p:submenu label="Curiosidades">
-			            <p:menuitem value="Você sabia?" action="Sabia?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
-			            <p:menuitem value="Pré-Natal" action="PreNatal?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
-			            <p:menuitem value="Exames e Vacinas" action="ExamesEvac?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			        <p:submenu label="você sabia">
+			            <p:menuitem value="você sabia" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-smile-o"/>
 			        </p:submenu>
 			        <p:submenu label="Parto">
-			            <p:menuitem value="Parto" action="Parto?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
-			        	<p:menuitem value="Cesarea" action="Cesarea?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			            <p:menuitem value="Parto" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
 			        </p:submenu>
 			        <p:submenu label="O Bebe">
-			            <p:menuitem value="O Bebe" action="Bebe?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
-			            <p:menuitem value="Primeiros Cuidados " action="Primeiros?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
-			            <p:menuitem value="Seus Cuidados" action="seuscuidados?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
-			            <p:menuitem value="Amamentação" action="Amamentacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="O Bebe" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-child"/>
 			        </p:submenu>
 			        <p:submenu label="Logout">
 			            <p:menuitem value="Logout" action="#{loginBean.deslogar}" icon="fa fa-fw fa-sign-out"/>
@@ -91,29 +85,22 @@
         
 
 <p:panel header="Home" footer="Minha Gestante 2016" >
-        <p:panelGrid columns="2" columnClasses="ui-grid-col-4,ui-grid-col-8" layout="grid" styleClass="ui-panelgrid-blank">
-            <p:graphicImage library="img" name="esboco-da-mulher-gravida.png" />
-            <p>"A descoberta da gravidez! A gravidez é um período de grandes transformações para a mulher,</p>
-            <p>para seu(sua) parceiro(a) e toda a família. São vivências intensas e por vezes sentimentos</p>
-            <p>contraditórios, momentos de dúvidas, de ansiedade, especialmente se você for adolescente.</p>
-            <p>Você pode estar sonhando com esse momento há muito tempo ou talvez tenha sido</p>
-            <p>surpreendida por uma gravidez inesperada. Mesmo quando a gravidez é planejada, você</p>
-            <p> precisará de um tempo para se adaptar a essa nova etapa da vida. Agora seu bebê está a</p>
-            <p>caminho e vocês dois vão passar muito tempo juntos.</p>
-            <p>Ao longo desses nove meses seu corpo vai se modificar lentamente, se preparando para o</p>
-            <p>parto e a maternidade. E nós preocupados com essa nova fase da sua vida, separamos várias</p>
-            <p>informações e dicas importantes para ajuda-la junto com o seu médico do pré-natal. Lembre-se</p>
-            <p>que ele(a) também está do seu lado, e quer o melhor pra você e seu bebe. Enquanto o bebê</p>
-            <p>se desenvolve, você também cresce como mulher. A gravidez lhe dará confiança e força para</p>
-            <p> o parto e para cuidar do bebê."</p>
-        </p:panelGrid>
-    </p:panel>
-
-
+        	<h1>Exercícios</h1>
+        	<p:graphicImage library="img" name="Exercicios1.png" />
+			<p>• Caminhadas: ajudam a melhorar a circulação do sangue, aumentar a disposição e a sensação de bem-estar. Se não houver contra indicação, deve ser mantida do início ao fim da gravidez.</p>
+			<p>• Procure fazer atividades físicas leves e prazerosas</p>
+			<p>• Exercite a respiração: respire lenta e profundamente, várias vezes ao dia. Isso pode ajudar em momentos de desconforto e inquietude.</p>
+			<p:graphicImage library="img" name="Exercicios2.png" />
+			<h3>Dicas importantes</h3>
+			<p>• É recomendável tomar um pouco de sol durante o início da manhã ou o final da tarde, inclusive nas mamas. Lembre-se de usar boné ou chapéu e protetor solar no rosto, para evitar manchas de pele.</p>
+			<p>• Evite descolorantes, tinturas de cabelo, alisantes e onduladores que contêm amônia e outros componentes que podem fazer mal ao bebê.</p>
+			<p>• Você deve sair de ambientes onde haja fumantes, em qualquer fase da gravidez. Respirar a fumaça com frequência pode afetar o bebê</p>
+			<p>Lembre-se que perguntar á sua mãe ou a uma mulher que já passou por essa experiência pode te ajudar a cuidar melhor da sua gestação e do pós-parto. Elas podem com certeza te dar boas dicas para cuidar desse momento.</p>
+        	<p:graphicImage library="img" name="Exercicios3.png" />
+        
+        
+</p:panel>
 </p:layoutUnit>
-
 </p:layout>
-
-
 </h:body>
 </html>

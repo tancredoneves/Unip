@@ -47,33 +47,36 @@
 			        <p:submenu label="Direitos">
 			            <p:menuitem value="Trabalhista" action="Trabalhista?faces-redirect=true" ajax="false" icon="fa fa-fw fa-gavel"/>
 			        </p:submenu>
-			        <p:submenu label="Descoberta">
-			            <p:menuitem value="Descoberta" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-info"/>
-			        </p:submenu>
+			       
 			        <p:separator />
 			        <p:submenu label="Gestação" >
-			            <p:submenu label="meses" icon="fa fa-fw fa-spinner">
-			                
-                    <p:menuitem value="1º trimestre" url="http://www.primefaces.org" icon="fa fa-fw fa-spinner" />
-                    <p:menuitem value="2º trimestre" url="http://www.primefaces.org/documentation" icon="fa fa-fw fa-spinner" />
-                    <p:menuitem value="3º trimestre" url="http://www.primefaces.org/downloads" icon="fa fa-fw fa-spinner" />
-                    
-	                </p:submenu>
+			            <p:menuitem value="Descoberta" action="Descoberta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-info"/>
+			            <p:menuitem value="meses" action="Gestacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-spinner"/>
+			            
 		            </p:submenu>
 			        <p:submenu label="Cuidados">
-			            <p:menuitem value="Cuidados" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Alimentação" action="Cuidados?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Sexo na gestação" action="Sexo?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Sono" action="Sono?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Exercicios" action="Exercicios?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
 			        </p:submenu>
-			        <p:submenu label="Sintomas">
-			            <p:menuitem value="Sintomas" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-user-md"/>
+			        <p:submenu label="Sistomas">
+			            <p:menuitem value="Sintomas" action="Sintomas?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-user-md"/>
 			        </p:submenu>
-			        <p:submenu label="você sabia">
-			            <p:menuitem value="você sabia" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-smile-o"/>
+			        <p:submenu label="Curiosidades">
+			            <p:menuitem value="Você sabia?" action="Sabia?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			            <p:menuitem value="Pré-Natal" action="PreNatal?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			            <p:menuitem value="Exames e Vacinas" action="ExamesEvac?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
 			        </p:submenu>
 			        <p:submenu label="Parto">
-			            <p:menuitem value="Parto" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			            <p:menuitem value="Parto" action="Parto?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			        	<p:menuitem value="Cesarea" action="Cesarea?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
 			        </p:submenu>
 			        <p:submenu label="O Bebe">
-			            <p:menuitem value="O Bebe" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="O Bebe" action="Bebe?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Primeiros Cuidados " action="Primeiros?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Seus Cuidados" action="seuscuidados?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Amamentação" action="Amamentacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
 			        </p:submenu>
 			        <p:submenu label="Logout">
 			            <p:menuitem value="Logout" action="#{loginBean.deslogar}" icon="fa fa-fw fa-sign-out"/>

@@ -11,7 +11,7 @@
 	
 <h:head>
 
-<title>Descoberta</title> 
+<title>sabia</title> 
         <meta charset="utf-8"/>
      
 
@@ -34,7 +34,7 @@
         <h:form>
 			    <p:growl autoUpdate="true"/>
 			 
-			   <p:panelMenu style="width:300px" >
+			    <p:panelMenu style="width:300px" >
 			        <p:submenu label="Informações"  >
 			            <p:menuitem value="Sobre o Site" action="cadastro?faces-redirect=true" icon="ui-icon-help" />
 			            <p:menuitem value="empresa" action="cadastro?faces-redirect=true"  icon="ui-icon-help" />
@@ -69,14 +69,10 @@
 			            <p:menuitem value="Exames e Vacinas" action="ExamesEvac?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
 			        </p:submenu>
 			        <p:submenu label="Parto">
-			            <p:menuitem value="Parto" action="Parto?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
-			        	<p:menuitem value="Cesarea" action="Cesarea?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			            <p:menuitem value="Parto" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
 			        </p:submenu>
 			        <p:submenu label="O Bebe">
-			            <p:menuitem value="O Bebe" action="Bebe?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
-			            <p:menuitem value="Primeiros Cuidados " action="Primeiros?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
-			            <p:menuitem value="Seus Cuidados" action="seuscuidados?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
-			            <p:menuitem value="Amamentação" action="Amamentacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="O Bebe" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-child"/>
 			        </p:submenu>
 			        <p:submenu label="Logout">
 			            <p:menuitem value="Logout" action="#{loginBean.deslogar}" icon="fa fa-fw fa-sign-out"/>
@@ -87,33 +83,23 @@
 	    </p:panelMenu>
 	</h:form>     
 	</p:layoutUnit>
- <p:layoutUnit position="center">
+<p:layoutUnit position="center">
+<p:panel header="Curiosidades" footer="Minha Gestante 2016" >
+		
+        <h1>Você sabia?</h1>
+			<p>• O desejo de comer coisas estranhas é comum na gravidez. Não há risco de o bebê nascer com problemas caso você passe vontade.</p>
+			<p>• A mulher grávida não precisa comer por dois.</p>
+			<p>• Dormir de bruços não machuca o bebê, mas dormir sobre o lado esquerdo é melhor.</p>
+			<p>• A mulher que fez uma cesariana pode ter parto normal na gravidez seguinte.</p>
+			<p>• A mulher pode lavar a cabeça desde o primeiro dia após o parto.</p>
+			<p>• O bebê não provoca rachaduras no peito da mãe quando arrota sobre ele.</p>
+			<p>• A mulher grávida pode fazer tratamento odontológico.</p>
+			<p>Diabete, pressão alta, anemia e infecção urinária são doenças que a mulher pode ter antes de engravidar ou desenvolver durante a gravidez. Caso a mulher tenha essas e outras doenças consideradas de risco, ela precisará de cuidados especiais.</p>
+			
+			
         
-
-<p:panel header="Home" footer="Minha Gestante 2016" >
-        <p:panelGrid columns="2" columnClasses="ui-grid-col-4,ui-grid-col-8" layout="grid" styleClass="ui-panelgrid-blank">
-            <p:graphicImage library="img" name="esboco-da-mulher-gravida.png" />
-            <p>"A descoberta da gravidez! A gravidez é um período de grandes transformações para a mulher,</p>
-            <p>para seu(sua) parceiro(a) e toda a família. São vivências intensas e por vezes sentimentos</p>
-            <p>contraditórios, momentos de dúvidas, de ansiedade, especialmente se você for adolescente.</p>
-            <p>Você pode estar sonhando com esse momento há muito tempo ou talvez tenha sido</p>
-            <p>surpreendida por uma gravidez inesperada. Mesmo quando a gravidez é planejada, você</p>
-            <p> precisará de um tempo para se adaptar a essa nova etapa da vida. Agora seu bebê está a</p>
-            <p>caminho e vocês dois vão passar muito tempo juntos.</p>
-            <p>Ao longo desses nove meses seu corpo vai se modificar lentamente, se preparando para o</p>
-            <p>parto e a maternidade. E nós preocupados com essa nova fase da sua vida, separamos várias</p>
-            <p>informações e dicas importantes para ajuda-la junto com o seu médico do pré-natal. Lembre-se</p>
-            <p>que ele(a) também está do seu lado, e quer o melhor pra você e seu bebe. Enquanto o bebê</p>
-            <p>se desenvolve, você também cresce como mulher. A gravidez lhe dará confiança e força para</p>
-            <p> o parto e para cuidar do bebê."</p>
-        </p:panelGrid>
-    </p:panel>
-
-
+</p:panel>
 </p:layoutUnit>
-
 </p:layout>
-
-
 </h:body>
 </html>

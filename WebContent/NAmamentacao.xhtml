@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	
+	
+	
+	
+<h:head>
+
+<title>Trabalhista</title> 
+        <meta charset="utf-8"/>
+     
+
+</h:head>
+<h:body>
+
+
+
+<p:layout style="min-width:400px;min-height:200px;">
+	<p:layoutUnit position="north" resizable="true" size="50" minSize="320" maxSize="320">
+	<p:graphicImage library="img" name="mulher.png" />
+	
+    </p:layoutUnit>
+    
+    
+
+    <p:layoutUnit position="west" resizable="true" size="150" minSize="200" maxSize="200">
+        <p:graphicImage library="img" name="mulher.jpg" />
+        
+        <h:form>
+			    <p:growl autoUpdate="true"/>
+			 
+			    <p:panelMenu style="width:300px" >
+			        <p:submenu label="Informações"  >
+			            <p:menuitem value="Sobre o Site" action="cadastro?faces-redirect=true" icon="ui-icon-help" />
+			            <p:menuitem value="empresa" action="cadastro?faces-redirect=true"  icon="ui-icon-help" />
+			    	</p:submenu>
+			    	<p:submenu label="Perfil">
+			    		<p:menuitem value="Conta" action="conta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-female"/>
+			            <p:menuitem value="Exames" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-paste"/>
+			            
+			        </p:submenu>
+			        <p:submenu label="Direitos">
+			            <p:menuitem value="Trabalhista" action="Trabalhista?faces-redirect=true" ajax="false" icon="fa fa-fw fa-gavel"/>
+			        </p:submenu>
+			       
+			        <p:separator />
+			        <p:submenu label="Gestação" >
+			            <p:menuitem value="Descoberta" action="Descoberta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-info"/>
+			            <p:menuitem value="meses" action="Gestacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-spinner"/>
+			            
+		            </p:submenu>
+			        <p:submenu label="Cuidados">
+			            <p:menuitem value="Alimentação" action="Cuidados?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Sexo na gestação" action="Sexo?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Sono" action="Sono?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Exercicios" action="Exercicios?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			        </p:submenu>
+			        <p:submenu label="Sistomas">
+			            <p:menuitem value="Sintomas" action="Sintomas?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-user-md"/>
+			        </p:submenu>
+			        <p:submenu label="Curiosidades">
+			            <p:menuitem value="Você sabia?" action="Sabia?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			            <p:menuitem value="Pré-Natal" action="PreNatal?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			            <p:menuitem value="Exames e Vacinas" action="ExamesEvac?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			        </p:submenu>
+			        <p:submenu label="Parto">
+			            <p:menuitem value="Parto" action="Parto?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			        	<p:menuitem value="Cesarea" action="Cesarea?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			        </p:submenu>
+			        <p:submenu label="O Bebe">
+			            <p:menuitem value="O Bebe" action="Bebe?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Primeiros Cuidados " action="Primeiros?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Seus Cuidados" action="seuscuidados?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Amamentação" action="Amamentacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			        </p:submenu>
+			        <p:submenu label="Logout">
+			            <p:menuitem value="Logout" action="#{loginBean.deslogar}" icon="fa fa-fw fa-sign-out"/>
+			        </p:submenu>
+			        
+			        
+        
+	    </p:panelMenu>
+	</h:form>     
+	</p:layoutUnit>
+ <p:layoutUnit position="center">
+        
+
+<p:panel header="Trabalhista" footer="Minha Gestante 2016" >
+
+			<h1>Amamentação</h1>
+        <p>Amamentando, você dá a seu bebê uma melhor qualidade de vida.</p>
+        <p>Ao amamentar, além de alimentar o bebê, você transmite amor, carinho e segurança, que são fundamentais para seu desenvolvimento e para sua relação com ele. Todo leite materno é forte, nutritivo e protege contra várias doenças. O colostro é o primeiro leite e tem cor amarelada, ideal para proteger o bebê nos primeiros dias. </p>
+        <p>Dica: Quanto mais seu bebê mamar, mais leite você terá. Não coloque horário ou tempo certo para cada mamada; seu bebê sabe quando e quanto necessita mamar. Deixe o bebê mamar até esvaziar uma mama, antes de passar para a outra. Caso não esvazie um peito numa mamada, retorne ao mesmo peito na mamada seguinte. Amamentando toda vez que seu bebê tiver fome, ele não precisará tomar chá, suco, água ou outro leite nos primeiros seis meses de vida.</p>
+        <p>Para que o bebê sugue bem o leite, encontre uma posição em que ele fique tranquilo e você relaxada e confortável. Você pode amamentar deitada, sentada ou em qualquer posição boa para os dois. </p>
+        <h3>Vantagens da amamentação</h3>
+        <h2>Para a mãe:</h2>
+        <p>• Ajuda o útero a voltar ao tamanho normal mais rapidamente. </p>
+        <p>• Reduz o risco de hemorragia e anemia após o parto.</p>
+        <p>• Favorece maior contato entre você e seu bebê. </p>
+        <p>• Ajuda na redução mais rápida de seu peso. </p>
+        <p>• Reduz o risco de câncer de mama no futuro. </p>
+        <p>• É mais econômica e higiênica: você só precisa lavar as mãos. </p>
+        <p>• É mais prática e segura: o leite está sempre pronto e fresco, na temperatura certa, e não se estraga. </p>
+        <h2>Para o bebê: </h2>
+        <p>• É mais nutritiva e protege contra doenças, como infecção, alergias, asma, desnutrição. </p>
+        <p>• O bebê recebe carinho e se sente protegido enquanto mama. </p>
+        <p>• Previne problemas dentários e respiratórios. </p>
+        <h2>Algumas dicas para o sucesso da amamentação:</h2>
+        <p:graphicImage library="img" name="amamentacao.png" />
+        <p>• O bebê deve pegar bem o peito, abocanhando a aréola (parte escura em volta do bico). Não dê chupetas para seu bebê, pois pode atrapalhar a pega e a sucção do leite. </p>
+        <p>• Lave seu peito só com água; não passe sabonete nem pomada nas mamas. Fique sempre com o sutiã seco. </p>
+        <p>• Em caso de rachaduras nos mamilos, observe se a pega está correta e tente mudar a posição de o bebê mamar. </p>
+        <p>• É bom tomar sol nas mamas, de manhã ou à tarde. Aproveite para dar um banho de sol em seu bebê também. Ele deve ficar sem a roupinha, para que o sol bata diretamente em sua pele. </p>
+        <p>• Em caso de mamas muito cheias ou endurecidas, é necessário retirar o excesso de leite, o que promoverá alívio para você e facilitará a pega pelo bebê. Peça orientação ao profissional de saúde. Se você produz mais leite do que seu bebê mama, pode ser uma doadora de leite materno. Verifique na Unidade de Saúde se há posto de coleta ou banco de leite perto de sua casa e como você pode doar. </p>
+        <p>• Em caso de problemas com a amamentação, procure orientação com os profissionais da Unidade de Saúde, no Banco de Leite ou no posto de coleta mais próximo.</p>
+        <h2>Sinais de alerta</h2>
+        <p>Procure o serviço de saúde se: </p>
+        <p>• a pressão estiver alta;</p>
+        <p>• sentir dores fortes de cabeça, com a visão embaralhada ou enxergando estrelinhas; </p>
+        <p>• o bebê parar de se mexer por mais de 12 horas; </p>
+        <p>• tiver sangramento ou perda de líquido (água) pela vagina; </p>
+        <p>• tiver um corrimento escuro (marrom ou preto);</p>
+        <p>• apresentar muito inchaço nos pés, nas pernas e no rosto, principalmente ao acordar; </p>
+        <p>• tiver dor ou ardor ao urinar; </p>
+        <p>• houver sangramento, mesmo sem dor; </p>
+        <p>• tiver contrações fortes, dolorosas e frequentes – se a bolsa das águas se romper antes de começarem as contrações, preste atenção na cor e no cheiro do líquido. Esta é uma informação importante para orientar os profissionais que vão atendê-la. </p>
+        <h2>Compareça às últimas consultas! </h2>
+        <p>Não existe alta do pré-natal; ele só acabará quando o bebê nascer. Mesmo após ser encaminhada para realizar pré-natal de alto risco em um serviço especializado, é importante que você seja acompanhada também pela equipe da Unidade Básica de Saúde que iniciou seu atendimento.</p>
+        
+            
+            
+</p:panel>
+
+
+</p:layoutUnit>
+
+</p:layout>
+
+
+</h:body>
+</html>

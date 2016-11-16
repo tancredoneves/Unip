@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	
+	
+	
+	
+<h:head>
+
+<title>seuscuidados</title> 
+        <meta charset="utf-8"/>
+     
+
+</h:head>
+<h:body>
+
+
+
+<p:layout style="min-width:400px;min-height:200px;">
+	<p:layoutUnit position="north" resizable="true" size="50" minSize="320" maxSize="320">
+	<p:graphicImage library="img" name="mulher.png" />
+	
+    </p:layoutUnit>
+    
+    
+
+    <p:layoutUnit position="west" resizable="true" size="150" minSize="200" maxSize="200">
+        <p:graphicImage library="img" name="mulher.jpg" />
+        
+        <h:form>
+			    <p:growl autoUpdate="true"/>
+			 
+			    <p:panelMenu style="width:300px" >
+			        <p:submenu label="Informações"  >
+			            <p:menuitem value="Sobre o Site" action="cadastro?faces-redirect=true" icon="ui-icon-help" />
+			            <p:menuitem value="empresa" action="cadastro?faces-redirect=true"  icon="ui-icon-help" />
+			    	</p:submenu>
+			    	<p:submenu label="Perfil">
+			    		<p:menuitem value="Conta" action="conta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-female"/>
+			            <p:menuitem value="Exames" url="http://www.primefaces.org"  ajax="false" icon="fa fa-fw fa-paste"/>
+			            
+			        </p:submenu>
+			        <p:submenu label="Direitos">
+			            <p:menuitem value="Trabalhista" action="Trabalhista?faces-redirect=true" ajax="false" icon="fa fa-fw fa-gavel"/>
+			        </p:submenu>
+			       
+			        <p:separator />
+			        <p:submenu label="Gestação" >
+			            <p:menuitem value="Descoberta" action="Descoberta?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-info"/>
+			            <p:menuitem value="meses" action="Gestacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-spinner"/>
+			            
+		            </p:submenu>
+			        <p:submenu label="Cuidados">
+			            <p:menuitem value="Alimentação" action="Cuidados?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Sexo na gestação" action="Sexo?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Sono" action="Sono?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			            <p:menuitem value="Exercicios" action="Exercicios?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-eye"/>
+			        </p:submenu>
+			        <p:submenu label="Sistomas">
+			            <p:menuitem value="Sintomas" action="Sintomas?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-user-md"/>
+			        </p:submenu>
+			        <p:submenu label="Curiosidades">
+			            <p:menuitem value="Você sabia?" action="Sabia?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			            <p:menuitem value="Pré-Natal" action="PreNatal?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			            <p:menuitem value="Exames e Vacinas" action="ExamesEvac?faces-redirect=true"   ajax="false" icon="fa fa-fw fa-smile-o"/>
+			        </p:submenu>
+			        <p:submenu label="Parto">
+			            <p:menuitem value="Parto" action="Parto?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			        	<p:menuitem value="Cesarea" action="Cesarea?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-hospital-o"/>
+			        </p:submenu>
+			        <p:submenu label="O Bebe">
+			            <p:menuitem value="O Bebe" action="Bebe?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Primeiros Cuidados " action="Primeiros?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Seus Cuidados" action="seuscuidados?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			            <p:menuitem value="Amamentação" action="Amamentacao?faces-redirect=true"  ajax="false" icon="fa fa-fw fa-child"/>
+			        </p:submenu>
+			        <p:submenu label="Logout">
+			            <p:menuitem value="Logout" action="#{loginBean.deslogar}" icon="fa fa-fw fa-sign-out"/>
+			        </p:submenu>
+			        
+			        
+        
+	    </p:panelMenu>
+	</h:form>     
+	</p:layoutUnit>
+<p:layoutUnit position="center">
+<p:panel header="Seus cuidados" footer="Minha Gestante 2016" >
+        
+        <h1>Puerpério: você também precisa de cuidados.</h1>
+        <h3>Se o parto foi normal</h3>
+        <p>Se houve corte próximo à vagina (episiotomia), mantenha a cicatriz bem limpa, lavando-a com sabonete durante o banho ou após fazer suas necessidades, e secando bem o local. A região está cicatrizando e pode ficar dolorida. Não se preocupe, os pontos vão cair sozinhos. </p>
+        <h3>Se o seu bebê nasceu de cesariana </h3>
+        <p>Mantenha a cicatriz bem limpa, lavando com sabonete durante o banho e secando-a bem. Os pontos deverão ser retirados de 8 a 10 dias, na Unidade de Saúde. </p>
+        <p>• Seu útero estará voltando ao tamanho normal. Por isso é comum ter cólicas, que, às vezes, aumentam durante a amamentação. Por mais ou menos um mês você vai perceber uma secreção que sai pela vagina, que no início é como um sangramento e depois vai diminuindo e clareando gradativamente. </p>
+        <p>• Se você tiver dor na parte de baixo da barriga, sangramento vaginal com cheiro desagradável e febre, procure rapidamente uma Unidade de Saúde. Você pode estar com uma infecção e deve tratá-la.</p>
+        <p>• Se você teve pressão alta, diabete ou outro problema na gestação ou no parto, os cuidados devem continuar após o nascimento do bebê. Você receberá a visita do agente comunitário de saúde (ACS) nesse período. Conte com ele para apoiá-la no que for preciso.</p>
+        <h3>Fortes emoções </h3>
+        <p>Você, que passou pelas transformações da gestação e do parto, poderá se sentir frágil e insegura em alguns momentos. Se esses sentimentos aparecerem, lembre-se de que esta fase é passageira e que logo você e seu bebê estarão mais confortáveis nesta nova vida. O apoio do(a) parceiro(a), de sua família ou das pessoas amigas é fundamental. Algumas mulheres ficam mais tristes, têm crises de choro e dificuldade para dormir, cuidar delas mesmas ou do bebê. Se isso acontecer com você, peça ajuda a alguém de sua família. Se os sintomas não se resolverem ou se tornarem muito intensos, você deverá ir à Unidade de Saúde para uma avaliação. </p>
+        <h3>Consulta pós-parto</h3>
+        <p>Você e seu bebê devem retornar à Unidade de Saúde na primeira semana após o parto. Sempre que possível, esteja acompanhada do pai do bebê ou do(a) parceiro(a). O atendimento nesse período é importante para: </p>
+        <p>• saber como está a saúde sua e de seu bebê; </p>
+        <p>• avaliar a amamentação e o sangramento vaginal; </p>
+        <p>• observar a cicatrização e retirar pontos, se necessário; </p>
+        <p>• examinar seu bebê, vacinar e realizar o teste do pezinho;</p>
+        <p>• ajudar a tirar dúvidas suas e de sua família, sobre qualquer questão em relação a sua saúde e a saúde de seu bebê;</p>
+        <p>• discutir se deseja ou não uma nova gravidez e sobre os métodos anticoncepcionais. </p>
+        <h3>O planejamento familiar </h3>
+        <p>Logo após o parto, você e seu parceiro estarão envolvidos com os cuidados intensivos com o bebê, muitas vezes sobrando pouco tempo para vocês dois a sós. As relações sexuais deverão aguardar em média 40 dias, tempo para seu organismo se recuperar. Independentemente do tipo de parto, é comum a vagina ficar ressecada e poderá haver certo desconforto na relação sexual. Esta situação é passageira e tudo voltará a ser como antes. Existem muitos métodos de evitar filhos, sendo alguns mais indicados durante o período de amamentação. É direito das mulheres e dos homens conhecerem todos os métodos e suas indicações para uma escolha mais apropriada. Por isso você deve ir, de preferência com seu companheiro, à consulta de puerpério, para que vocês, junto com o profissional de saúde, possam escolher o método mais adequado nessa fase. </p>
+        <p>É importante saber que a amamentação exclusiva já oferece proteção contra uma nova gravidez até 5 meses após o parto, se a menstruação não descer e o intervalo entre as mamadas for menor que 5 horas. </p>
+        <p>O método que vocês escolherem (DIU, pílula, camisinha, diafragma, injeção) deverá ser disponibilizado pelo SUS. </p>
+        <p>No caso do método definitivo para a mulher (laqueadura), é preciso ter, no mínimo, dois filhos ou mais de 25 anos e esperar pelo menos 2 meses após o parto. A cirurgia do homem, vasectomia, também é um direito garantido pelo SUS. Discuta com seu parceiro também esta possibilidade. É uma cirurgia mais simples que a ligadura de trompas. A escolha de um método definitivo deve ser uma decisão muito amadurecida, pois é irreversível. </p>
+        <p>Oriente-se com a equipe de saúde sobre retomar as atividades físicas. Evite carregar peso.</p>
+        
+        
+        
+</p:panel>
+</p:layoutUnit>
+</p:layout>
+</h:body>
+</html>
